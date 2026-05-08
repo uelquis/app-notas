@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="app.diagrams.net" pages="3">
   <diagram name="casos de uso" id="Xm7n8XlGTnBNIowvv2ud">
     <mxGraphModel dx="1178" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -52,6 +52,49 @@
           <mxGeometry relative="1" x="-0.1038" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="CUUBtgmwLnv_jOpN3Rtb" name="schema">
+    <mxGraphModel dx="808" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="j2jE0WRyu9TPlRAHiNU0-14" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" value="Anotacao" vertex="1">
+          <mxGeometry height="146" width="160" x="340" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="j2jE0WRyu9TPlRAHiNU0-15" parent="j2jE0WRyu9TPlRAHiNU0-14" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" value="id : number" vertex="1">
+          <mxGeometry height="30" width="160" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="j2jE0WRyu9TPlRAHiNU0-31" parent="j2jE0WRyu9TPlRAHiNU0-14" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" value="data_criacao : string" vertex="1">
+          <mxGeometry height="30" width="160" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="j2jE0WRyu9TPlRAHiNU0-16" parent="j2jE0WRyu9TPlRAHiNU0-14" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" value="titulo : string" vertex="1">
+          <mxGeometry height="30" width="160" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="j2jE0WRyu9TPlRAHiNU0-17" parent="j2jE0WRyu9TPlRAHiNU0-14" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" value="texto: string" vertex="1">
+          <mxGeometry height="30" width="160" y="116" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="xMywRj_g1J0TPzwmKXGc" name="design">
+    <mxGraphModel dx="808" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tFYOPycsUnvlIUJvENtX-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Inspirações" vertex="1">
+          <mxGeometry height="120" width="170" x="290" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="tFYOPycsUnvlIUJvENtX-2" parent="tFYOPycsUnvlIUJvENtX-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;a href=&quot;https://www.c40.org/&quot;&gt;C40 site&lt;/a&gt;" vertex="1">
+          <mxGeometry height="30" width="170" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tFYOPycsUnvlIUJvENtX-3" parent="tFYOPycsUnvlIUJvENtX-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;a href=&quot;https://progressive.international/&quot;&gt;Progressive International&lt;/a&gt;" vertex="1">
+          <mxGeometry height="30" width="170" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tFYOPycsUnvlIUJvENtX-4" parent="tFYOPycsUnvlIUJvENtX-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;a href=&quot;https://locomotive.ca/en/work&quot;&gt;Trabalho do Locomotive&lt;/a&gt;" vertex="1">
+          <mxGeometry height="30" width="170" y="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
