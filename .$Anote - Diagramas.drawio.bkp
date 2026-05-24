@@ -1,4 +1,4 @@
-<mxfile host="Electron" pages="3">
+<mxfile host="app.diagrams.net" pages="3">
   <diagram name="casos de uso" id="Xm7n8XlGTnBNIowvv2ud">
     <mxGraphModel dx="1178" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -57,14 +57,14 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CUUBtgmwLnv_jOpN3Rtb" name="schema">
-    <mxGraphModel dx="644" dy="391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="808" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="j2jE0WRyu9TPlRAHiNU0-14" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" value="Anotacao" vertex="1">
           <mxGeometry height="146" width="160" x="340" y="300" as="geometry" />
         </mxCell>
-        <mxCell id="j2jE0WRyu9TPlRAHiNU0-15" parent="j2jE0WRyu9TPlRAHiNU0-14" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" value="id : string" vertex="1">
+        <mxCell id="j2jE0WRyu9TPlRAHiNU0-15" parent="j2jE0WRyu9TPlRAHiNU0-14" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" value="id : number" vertex="1">
           <mxGeometry height="30" width="160" y="26" as="geometry" />
         </mxCell>
         <mxCell id="j2jE0WRyu9TPlRAHiNU0-31" parent="j2jE0WRyu9TPlRAHiNU0-14" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" value="data_criacao : string" vertex="1">
@@ -73,7 +73,7 @@
         <mxCell id="j2jE0WRyu9TPlRAHiNU0-16" parent="j2jE0WRyu9TPlRAHiNU0-14" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" value="titulo : string" vertex="1">
           <mxGeometry height="30" width="160" y="86" as="geometry" />
         </mxCell>
-        <mxCell id="j2jE0WRyu9TPlRAHiNU0-17" parent="j2jE0WRyu9TPlRAHiNU0-14" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" value="conteudo: string" vertex="1">
+        <mxCell id="j2jE0WRyu9TPlRAHiNU0-17" parent="j2jE0WRyu9TPlRAHiNU0-14" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" value="texto: string" vertex="1">
           <mxGeometry height="30" width="160" y="116" as="geometry" />
         </mxCell>
       </root>
