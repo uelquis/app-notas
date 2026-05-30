@@ -2,7 +2,7 @@ import { DarkTheme, DefaultTheme, type Theme } from '@react-navigation/native';
  
 export const THEME = {
   light: {
-    background: '#F6F0D7',
+    background: '#FAF9DF',
     foreground: 'hsl(0 0% 3.9%)',
     card: 'hsl(0 0% 100%)',
     cardForeground: 'hsl(0 0% 3.9%)',
