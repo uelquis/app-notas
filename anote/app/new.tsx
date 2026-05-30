@@ -5,13 +5,13 @@ import {
   KeyboardAvoidingView,
   Platform,
   ScrollView,
-  SafeAreaView,
 } from "react-native";
 import { router, Stack } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { ChevronLeft } from "lucide-react-native";
 import { Button } from "@/components/ui/button";
 import { Text } from "@/components/ui/text";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function NewNoteScreen() {
   const [title, setTitle] = useState("");
@@ -39,7 +39,7 @@ export default function NewNoteScreen() {
 
       router.back();
     } catch (error) {
-      console.error("Error saving note:", error);
+      console.error("Erro ao salvar a anotação:", error);
     } finally {
       setIsSaving(false);
     }
@@ -58,10 +58,10 @@ export default function NewNoteScreen() {
           onPress={() => router.back()}
         >
           <ChevronLeft size={20} color="#E89951" />
-          <Text className="text-[#E89951] font-semibold text-base">Cancel</Text>
+          <Text className="text-[#E89951] font-semibold text-base">Cancelar</Text>
         </Button>
         
-        <Text className="text-slate-800 font-bold text-lg">New Note</Text>
+        <Text className="text-slate-800 font-bold text-lg">Nova Anotação</Text>
         
         <Button
           variant="ghost"
@@ -75,7 +75,7 @@ export default function NewNoteScreen() {
               title.trim() ? "text-[#E89951]" : "text-slate-400"
             }`}
           >
-            {isSaving ? "Saving..." : "Save"}
+            {isSaving ? "Salvando..." : "Salvar"}
           </Text>
         </Button>
       </View>
@@ -87,7 +87,7 @@ export default function NewNoteScreen() {
       >
         <ScrollView className="flex-1 p-6" keyboardShouldPersistTaps="handled">
           <TextInput
-            placeholder="Title"
+            placeholder="Título"
             placeholderTextColor="#C6C09D"
             value={title}
             onChangeText={setTitle}
@@ -100,7 +100,7 @@ export default function NewNoteScreen() {
           
           <TextInput
             ref={contentInputRef}
-            placeholder="Start typing your note here..."
+            placeholder="Digite sua anotação aqui..."
             placeholderTextColor="#D2CCAA"
             value={content}
             onChangeText={setContent}

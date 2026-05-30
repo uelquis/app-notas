@@ -66,12 +66,12 @@ export default function App() {
 
   const handleDelete = (id: string) => {
     Alert.alert(
-      "Delete Note",
-      "Are you sure you want to permanently delete this note?",
+      "Excluir Anotação",
+      "Tem certeza que deseja excluir esta anotação? Esta ação não pode ser desfeita.",
       [
-        { text: "Cancel", style: "cancel" },
+        { text: "Cancelar", style: "cancel" },
         {
-          text: "Delete",
+          text: "Excluir",
           style: "destructive",
           onPress: async () => {
             try {
@@ -79,7 +79,7 @@ export default function App() {
               setNotes(updatedNotes);
               await AsyncStorage.setItem("@notes_data", JSON.stringify(updatedNotes));
             } catch (error) {
-              console.error("Error deleting note:", error);
+              console.error("Erro ao excluir a anotação:", error);
             }
           },
         },
@@ -163,9 +163,9 @@ export default function App() {
         
         {/* Elegant Header */}
         <View className="flex-row justify-between items-baseline mb-6">
-          <Text className="text-3xl font-extrabold text-slate-800 tracking-tight">notas</Text>
+          <Text className="text-3xl font-extrabold text-slate-800 tracking-tight">anote</Text>
           <Text className="text-sm font-bold text-[#E89951]">
-            {notes.length} {notes.length === 1 ? "note" : "notes"}
+            {notes.length} {notes.length === 1 ? "anotação" : "anotações"}
           </Text>
         </View>
 
@@ -173,7 +173,7 @@ export default function App() {
         <View className="flex-row items-center bg-[#F3F0CE] rounded-xl px-3 py-2 mb-6">
           <Search size={18} color="#E89951" className="mr-2" />
           <TextInput
-            placeholder="Search notes..."
+            placeholder=" Buscar anotações..."
             placeholderTextColor="#C1BA93"
             value={searchQuery}
             onChangeText={setSearchQuery}
@@ -199,12 +199,12 @@ export default function App() {
           <View className="flex-1 items-center justify-center pb-24">
             <FileText size={64} color="#DCD7B1" className="mb-4" />
             <Text className="text-[#A29A72] font-bold text-lg text-center">
-              {notes.length === 0 ? "No notes yet" : "No results found"}
+              {notes.length === 0 ? "Nenhuma anotação ainda" : "Nenhum resultado encontrado"}
             </Text>
             <Text className="text-[#BCB693] text-sm text-center mt-2 max-w-[240px]">
               {notes.length === 0
-                ? "Tap the plus button below to create your very first note."
-                : "Try searching for a different keyword or phrase."}
+                ? "Toque no botão de mais abaixo para criar sua primeira anotação."
+                : "Tente pesquisar por uma palavra-chave ou frase diferente."}
             </Text>
           </View>
         )}

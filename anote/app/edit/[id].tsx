@@ -34,7 +34,7 @@ export default function EditNoteScreen() {
           }
         }
       } catch (error) {
-        console.error("Error fetching note for editing:", error);
+        console.error("Erro ao buscar a anotação para edição:", error);
       } finally {
         setIsLoading(false);
       }
@@ -66,7 +66,7 @@ export default function EditNoteScreen() {
       }
       router.back();
     } catch (error) {
-      console.error("Error saving updated note:", error);
+      console.error("Erro ao salvar a anotação atualizada:", error);
     } finally {
       setIsSaving(false);
     }
@@ -75,7 +75,7 @@ export default function EditNoteScreen() {
   if (isLoading) {
     return (
       <SafeAreaView className="flex-1 bg-[#FAF9DF] items-center justify-center">
-        <Text className="text-slate-500 font-medium">Loading note...</Text>
+        <Text className="text-slate-500 font-medium">Carregando anotação...</Text>
       </SafeAreaView>
     );
   }
@@ -93,10 +93,10 @@ export default function EditNoteScreen() {
           onPress={() => router.back()}
         >
           <ChevronLeft size={20} color="#E89951" />
-          <Text className="text-[#E89951] font-semibold text-base">Cancel</Text>
+          <Text className="text-[#E89951] font-semibold text-base">Cancelar</Text>
         </Button>
         
-        <Text className="text-slate-800 font-bold text-lg">Edit Note</Text>
+        <Text className="text-slate-800 font-bold text-lg">Editar Anotação</Text>
         
         <Button
           variant="ghost"
@@ -110,7 +110,7 @@ export default function EditNoteScreen() {
               title.trim() ? "text-[#E89951]" : "text-slate-400"
             }`}
           >
-            {isSaving ? "Saving..." : "Save"}
+            {isSaving ? "Salvando..." : "Salvar"}
           </Text>
         </Button>
       </View>
@@ -122,7 +122,7 @@ export default function EditNoteScreen() {
       >
         <ScrollView className="flex-1 p-6" keyboardShouldPersistTaps="handled">
           <TextInput
-            placeholder="Title"
+            placeholder="Título"
             placeholderTextColor="#C6C09D"
             value={title}
             onChangeText={setTitle}
@@ -135,7 +135,7 @@ export default function EditNoteScreen() {
           
           <TextInput
             ref={contentInputRef}
-            placeholder="Start typing your note here..."
+            placeholder="Comece a digitar sua anotação aqui..."
             placeholderTextColor="#D2CCAA"
             value={content}
             onChangeText={setContent}
